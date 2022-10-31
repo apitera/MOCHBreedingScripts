@@ -1,0 +1,88 @@
+
+These should all be TAB separated files
+
+info to include within file:
+-M RFID
+-F RFID
+-FIRST EGG DATE MM/DD
+-CLUTCH
+-BROOD
+
+-NESTLING BANDING DATE
+-BAND PREFIX (before '-' in sliver band ID #)
+
+-BAND SUFFIX (will be different and only typed once)
+-INDIVIDUAL MASS
+-BID
+-FECAL ID
+
+
+
+How to name box files: 
+	box_elevation_year.TXT in this format: ##_E_YYYY.TXT
+	for renest, second brood etc... specify after year: box_elevation_year_RENEST.TXT
+	-example for box 12 low in 2017: 
+		12_L_2017.TXT
+
+
+
+Line 1: GENERAL INFO
+
+(general layout) 'M_RFID	F_RFID	FIRST_EGG	CLUTCH	BROOD'
+
+		M_RFID:	   [0], this is the MALE's ID, MUST BE 10 HEXADECIMAL DIGITS, if not banded during breeding this = 'NA'
+		F_RFID:	   [1], this is the FEMALE's ID, MUST BE 10 HEXADECIMAL DIGITS, if not banded during breeding this = 'NA'
+		FIRST_EGG: [2], this is the FIRST EGG DATE, should be in mm/dd format DO NOT INCLUDE YEAR
+		CLUTCH:	   [3], this is the total number of eggs
+		BROOD:	   [4], this is the total number of nestlings at day 16 (date of banding)
+
+
+Line 2: INFO FOR BANDING
+(general layout) 'NBAND_DATE	PREFIX'
+
+		NBAND_DATE: [0], this is the date of nestling banding, should be day 16, in mm/dd format DO NOT INCLUDE YEAR
+		PREFIX:		[1], this is the first 4 digits of the silver band id that precede the '-'
+			-IF 2 PREFIXES W/IN SAME BROOD, SEE BELOW
+			
+______________________________________________________________________________________________________________________________
+
+						-------------- 2016 & 2017: Nestling Lines----------------
+______________________________________________________________________________________________________________________________
+
+	Silver band suffix (5 digits after '-')	BID	MASS	FECAL	NOTES
+	- **** IF PREFIX CHANGES MID-BROOD type out full silver band combo FOR NEW PREFIX including new prefix and the '-'
+		see file 47-1_L_2017.TXT below
+	-if no fecal, make note of this
+	
+	EXAMPLE:
+		25579	LF481	13.52	NA	NA
+		
+	EXAMPLE OF ENTIRE FILE W/ 2 SILVER BAND PREFIXES FROM 47-1_L_2017.TXT:
+	
+		0700EDD5E8	0700EE1D35	05/17	3	3
+		06/19	2740
+		26000	LF735	12.89	FL13	NA
+		2820-13101	LF736	12.21	NA	NA
+		2820-13102	LF737	13.72	FL14	NA
+		
+		
+______________________________________________________________________________________________________________________________
+
+						-------------- 2018 and future: Nestling Lines----------------
+______________________________________________________________________________________________________________________________
+
+	Silver band suffix (5 digits after '-')	BID	MASS	AS.R	AS.L	NOTES
+	
+	- **** IF PREFIX CHANGES MID-BROOD type out full silver band combo FOR NEW PREFIX including new prefix and the '-'
+		see file 47-1_L_2017.TXT below
+			
+	EXAMPLE:
+		13001	LF986	12.11	17.1	16.05	NA
+		
+	EXAMPLE OF ENTIRE FILE W/ 2 SILVER BAND PREFIXES FROM 40_L_2018.TXT:
+	
+		0700EDD5E8	0700EE1D35	05/17	3	3
+		06/19	2740
+		26000	LF735	12.89	FL13	NA
+		2820-13101	LF736	12.21	NA	NA
+		2820-13102	LF737	13.72	FL14	NA
