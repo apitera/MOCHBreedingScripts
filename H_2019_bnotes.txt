@@ -1,0 +1,15 @@
+1-1	Brood depredated before D16.
+1	Clutch abandoned prehatch.
+3-2	Clutch depredated prehatch.
+6	Clutch abandoned prehatch.
+17-3	Nest abandoned before clutch complete
+22B	Male not seen.
+28-1C	Nest abandoned before clutch complete.
+32	All nestlings depredated after D16.
+33-2	Nestlings were depredated after D16. Parents stopped visitation on the 19th
+33-5	Nestlings died before D8. Nestlings appeared fine but were dead in the nest, potentially from loss of a parent.
+43B	Depredated before clutch complete.
+14A	Clutch abandoned prehatch.
+21A	Nestlings found dead before D16, likely died D9-10.
+B12	4 unhatched eggs in nest. 
+B30	Clutch depredated prehatch.
